@@ -24,6 +24,7 @@
     <ProjectGuid>{a23d80d1-96fb-42d9-ac5d-68a91070bea2}</ProjectGuid>
     <RootNamespace>testspliteCppfiles</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>testsqliteCpp_files</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -102,6 +103,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)sqlite3_lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -124,17 +126,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Database.cpp" />
-    <ClCompile Include="sqlite3.c" />
     <ClCompile Include="Statement.cpp" />
-    <ClCompile Include="testspliteCpp_files.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="UserRepository.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Database.h" />
-    <ClInclude Include="sqlite3.h" />
     <ClInclude Include="Statement.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="UserRepository.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\sqlite3_lib\sqlite3_lib.vcxproj">
+      <Project>{9b8265a9-942c-494a-ad0a-d3caf488b1a0}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

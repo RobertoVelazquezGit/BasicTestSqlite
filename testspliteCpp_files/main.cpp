@@ -53,4 +53,5 @@ int main()
     return 0;
 }
 
+// sqlite3_lib project must be added as reference to this one project 
 

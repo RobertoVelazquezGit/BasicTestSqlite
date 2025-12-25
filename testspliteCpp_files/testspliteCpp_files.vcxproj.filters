@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="testspliteCpp_files.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="sqlite3.c">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Database.cpp">
@@ -32,9 +29,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="sqlite3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Database.h">
       <Filter>Header Files</Filter>
     </ClInclude>
