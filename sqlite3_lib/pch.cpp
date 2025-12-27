@@ -4,7 +4,7 @@
 
 // When you are using pre-compiled headers, this source file is necessary for compilation to succeed.
 
-// Thing I had to do to compile as static library
+// Things to do to compile as static library
 // Project as c++17 (not necessary)
 // 
 // On sqlite3.cpp
